@@ -249,11 +249,11 @@ margin-bottom: 3%;
 
     .game{
     
-        margin-top:3%;
+        margin-top:2%;
     
     
         display:grid;
-        grid-template: repeat(5, 85px )/repeat(4, 95px); /* << */
+        grid-template: repeat(5, 85px )/repeat(4, 100px); /* << */
     
     }
 
