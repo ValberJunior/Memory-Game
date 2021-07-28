@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image:url(../assets/background1.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+
+   
+
+    width: 100vw;
+    height: 100vh;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.container{
+   
+    width: 700px;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#start{
+    background-color: #fffb0f;
+    padding: 10px 30px 10px 30px;
+    border: none;
+
+    font-family: 'Press Start 2P', cursive;
+
+    font-size: 30px;
+
+    border-radius: 20px;
+
+    cursor:pointer;
+
+    box-shadow: 10px 10px 10px #0000007e;
+
+    margin: 10%;
+
+    animation: opacity 0.6s linear infinite forwards; 
+
+}
+
+   @keyframes opacity{
+       0%{opacity:0;}
+       100%{opacity:1;}
+   }
+
+#banner{
+    width: 500px;
+}
+
+.menu{
+     
+    display: none;
+
+    list-style: none;
+    text-align: center;
+
+    margin: 5%;
+}
+
+li{
+    width: 150px;
+    padding: 20px 60px 20px 60px;
+    margin:2px;
+    background-color: #e7803c;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: all 0.4s linear 0.1s;
+}
+
+li:hover{
+
+    
+    background-color: tomato;
+    color:white;
+
+}
+
+/*Media queries ------------------------------------------------------------*/
+
+@media screen and (max-width:900px){
+
+    .container{
+   
+        width: 600px;
+        height: 300px;
+    }
+    
+    
+    #banner{
+        width: 350px;
+    }
+
+}
+
+
+
+@media screen and (max-width:800px){
+
+    .container{
+   
+        width: 500px;
+        height: 300px;
+    }
+    
+    #start{
+    
+        font-size: 25px;
+        margin: 15%;
+
+    
+    }
+ 
+    
+    #banner{
+        width: 300px;
+    }
+    
+
+    
+    li{
+        width: 130px;
+        font-size: 14px;
+    }
+    
+
+}
+
+@media screen and (max-width:600px){
+
+    
+    #start{
+    
+        font-size: 20px;
+        margin: 15%;
+
+    
+    }
+ 
+    
+    #banner{
+        width: 280px;
+    }
+    
+
+    
+    li{
+        width: 100px;
+        font-size: 12px;
+    }
+    
+
+}
+
+/*Versão Mobile*/
+
+@media only screen and (min-width : 300px) and (max-width:420px) {
+
+    .container{
+   
+        width: 500px;
+        height: 300px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+    
+    
+    }
+
+    #banner{
+        width: 250px;
+    }
+
+    li{
+        width: 90px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 280px){
+
+    .container{
+   
+        width: 400px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+    
+    
+    }
+
+    #banner{
+        width: 200px;
+    }
+
+    li{
+        width: 80px;
+        font-size: 10px;
+    }
+}

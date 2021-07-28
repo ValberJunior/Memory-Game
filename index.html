@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonball - Memory Game</title>
+    <!--Meu arquivo CSS-->
+    <link rel="stylesheet" href='./css/home.css' type='text/css'>
+    <!--Icone da minha página-->
+    <link rel="icon" href="./assets/logo.png" type='image/png'>
+    <!--Fonte da página-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--Link de icones-->
+    <script src="https://kit.fontawesome.com/d2883e7411.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class='container'>
+
+<img src='./assets/home.png' id='banner'>
+
+<button id='start'> START </button>
+<ul class='menu'>
+
+    <li id='opt1'>NOVO JOGO</li>
+    <li id='opt2'>SOM:AUTO</li>
+    <li id='opt3'>SOBRE</li>
+    <li id='opt4'>VOLTAR</li>
+
+</ul>
+
+<audio  id='audio1'autoplay='true' loop='true'>
+    <source src='./assets/audio1.mp3' type='audio/mp3'>
+</audio>
+
+<audio id='audio2'>
+    <source src='./assets/click.mp3' type='audio/mp3'>
+</audio>
+
+</div>
+
+    <script src='./script/home.js'></script>
+</body>
+</html>
