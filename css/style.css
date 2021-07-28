@@ -240,8 +240,8 @@ margin-bottom: 3%;
 
 
     .card{
-        width:80px;
-        height:80px;
+        width:85px;
+        height:90px;
     }
 
     .card_front , .card_back{
@@ -253,9 +253,8 @@ margin-bottom: 3%;
     
     
         display:grid;
-        grid-template: repeat(5, 100px )/repeat(4, 85px); /* << */
-        gap:15px;
-    
+        grid-template: repeat(5, 100px )/repeat(4, 90px); /* << */
+        gap:10;
     }
 
     #home {
