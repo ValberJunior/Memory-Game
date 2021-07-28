@@ -89,6 +89,11 @@ function flipCard(){
   if(game.checkMatch()){
       game.clearCards();
       audio2.play();
+      if (game.checkGameOver()){
+        audio3.play();
+        let gameOverLayer = document.getElementById('gameOver');
+        gameOverLayer.style.display = 'flex';
+      };
   }else{
       setTimeout(() => {
         

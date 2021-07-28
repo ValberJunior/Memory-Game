@@ -46,6 +46,13 @@ let game = {
      this.secondCard.flipped = false;
      this.clearCards();
  },
+ 
+ checkGameOver : function (){
+     
+    return this.cards.filter(card => !card.flipped).length == 0;
+ 
+},
+
 
  items : ['image1','image2','image3','image4', 'image5', 'image6', 'image7','image8', 'image9', 'image10'],
 
