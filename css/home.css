@@ -196,6 +196,10 @@ li:hover{
         width: 250px;
     }
 
+    .menu{
+        margin:auto;
+    }
+
     li{
         width: 80%;
         font-size: 10px;
