@@ -243,7 +243,7 @@ margin-bottom: 3%;
 
 
     .card{
-        width:75px;
+        width:85px;
         height:96px;
     }
 
@@ -251,13 +251,15 @@ margin-bottom: 3%;
         border-radius:15px;}
 
     .game{
-    
-        margin-top:2%;
+        
+        width: 95%;
+        align-self: center;
+        
     
     
         display:grid;
-        grid-template: repeat(5, 100px )/repeat(4, 80px); /* << */
-        gap:2px;
+        grid-template: repeat(5, 100px )/repeat(4, 90px); /* << */
+        gap:10px;
     }
 
     #home {
