@@ -21,23 +21,20 @@ const BACK = 'card_back';
 const CARD = 'card';
 const ICON = 'icon';
 
-let items = ['image1','image2','image3','image4', 'image5', 'image6', 'image7','image8', 'image9', 'image10'];
 
-let cards = null;
+
+
 
 startGame();
 
 function startGame(){
- cards = createCards(items);
- shuffleCards(cards);
- initializeCards(cards);
-
+ initializeCards(game.createCards());
 };
 
 function initializeCards(cards){
     let gameboard = document.getElementById('gameBoard');
 
-    cards.forEach(card => {
+    game.cards.forEach(card => {
         let cardElement = document.createElement('div');
         cardElement.id = card.id;
         cardElement.classList.add(CARD);
@@ -80,49 +77,26 @@ function createCardFace (face, card, element){
 }
 
 
-function shuffleCards(cards){
-   let currentIndex = cards.length;
-   let randomIndex = 0;
-
-   while(currentIndex !== 0){
-       randomIndex = Math.floor(Math.random() * currentIndex);
-       currentIndex-- ;
-
-       [cards[randomIndex], cards[currentIndex]] = [cards[currentIndex],cards[randomIndex]];
-    };
-};
-
-
-
-function createCards(items){
-    let cards = [];
-
-    items.forEach((item) => {
-        cards.push(createPair(item));
-    });
-
-    return (cards.flatMap(pair => pair));
-}
-
-function createPair(item){
-
-    return[{
-        id: createId(item),
-        icon: item,
-        flipped: false,
-    },{
-        id: createId(item),
-        icon: item,
-        flipped: false,
-    }]
-
-}
-
-function createId(item){
-    return item + parseInt(Math.random() * 1000);
-}
-
 function flipCard(){
  audio1.play();   
+
+ if (game.setCard(this.id)){
  this.classList.add('flip');
+  if(game.checkMatch()){
+      game.clearCards();
+      audio2.play();
+  }else{
+      setTimeout(() => {
+        
+      let firstCardView = document.getElementById(game.firstCard.id);
+      let secondCardView = document.getElementById(game.secondCard.id);
+     
+      firstCardView.classList.remove('flip');
+      secondCardView.classList.remove('flip');
+
+      game.clearCards();
+    }, 1000);
+
+  }
+ }
 }
