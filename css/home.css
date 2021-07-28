@@ -221,6 +221,9 @@ li{
         font-family: 'Press Start 2P', cursive;
     
         font-size: 30px;
+
+        display :flex;
+        align-items: center;
     
     }
 
