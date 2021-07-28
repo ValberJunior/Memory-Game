@@ -254,7 +254,7 @@ margin-bottom: 3%;
     
         display:grid;
         grid-template: repeat(5, 100px )/repeat(4, 90px); /* << */
-        gap:10;
+        gap:10px;
     }
 
     #home {
