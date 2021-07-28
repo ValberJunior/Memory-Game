@@ -215,6 +215,15 @@ li{
         width: 250px;
     }
 
+    #start{
+
+        padding: 20px 35px 20px 35px;
+        font-family: 'Press Start 2P', cursive;
+    
+        font-size: 30px;
+    
+    }
+
 
     li{
         width: 90px;
