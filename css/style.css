@@ -80,7 +80,10 @@ img{
     background-color: #000000e3;
 
     color:white;
-    font-size: 50px;
+    font-size: 30px;
+
+    text-align: center;
+
 
     display:none;  /*O display ficará none até o jogo terminar, depois ficará FLEX*/
     flex-direction: column;
@@ -95,6 +98,7 @@ img{
 #restart{
     padding: 20px;
     font-size: 20px;
+    font-weight: bolder;
 
     background-color: #f3dc09;
 
@@ -102,7 +106,7 @@ img{
 
     border-radius: 10px;
 
-    margin-top:10px;
+    margin-top:10%;
 
     cursor:pointer;
 }
@@ -243,7 +247,7 @@ margin-bottom: 3%;
 
 
     .card{
-        width:85px;
+        width:80px;
         height:96px;
     }
 
@@ -251,15 +255,10 @@ margin-bottom: 3%;
         border-radius:15px;}
 
     .game{
-        
-        width: 95%;
-        align-self: center;
-        
-    
-    
+
         display:grid;
-        grid-template: repeat(5, 100px )/repeat(4, 90px); /* << */
-        gap:10px;
+        grid-template: repeat(5, 100px )/repeat(4, 80px); /* << */
+        gap:5px;
     }
 
     #home {
