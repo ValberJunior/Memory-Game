@@ -6,6 +6,10 @@ let game = {
 
  secondCard : null,
 
+ items : ['image1','image2','image3','image4', 'image5', 'image6', 'image7','image8', 'image9', 'image10'],
+
+ cards : null,
+
  setCard : function(id){
 
  let card = this.cards.filter(card => card.id === id)[0];
@@ -53,10 +57,6 @@ let game = {
  
 },
 
-
- items : ['image1','image2','image3','image4', 'image5', 'image6', 'image7','image8', 'image9', 'image10'],
-
- cards : null,
 
 createCards: function (items){
     this.cards = [];
