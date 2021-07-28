@@ -184,6 +184,9 @@ margin-bottom: 3%;
         height: 115px;
     }
 
+    .card_front , .card_back{
+        border-radius:15px;}
+
     .game{
 
         grid-template: repeat(4, 120px )/repeat(5, 120px); /* << */
