@@ -158,11 +158,6 @@ margin-bottom: 3%;
 
 /*Media queries ------------------------------------------------------------*/
 
-@media screen and (max-width:1000px){
-
-
-}
-
 @media screen and (max-width:800px){
 
     .card{
