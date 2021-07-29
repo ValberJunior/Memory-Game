@@ -1,32 +1,30 @@
-*{  margin: 0;
+*{  margin: 0;  /*Restaurar o margin e Padding como default*/
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Definições do Body*/
 body{
     font-family: 'Righteous', cursive;
-     
      width:100vw;
      height: 100vh; 
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-
     background-image:url(../assets/background.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+/*Definições para a tag IMG das cartas*/
 img{
     width: 100%;
     height: 100%;
-
     border-radius: 10px;
 }
 
-
+/*Cartas*/
 .card{
     width:140px;
     height: 145px;
@@ -36,6 +34,7 @@ img{
     cursor:pointer;
 }
 
+/*Frente e Verso*/
 .card_front , .card_back{
    width: 100%;
    height: 100%;
@@ -49,6 +48,7 @@ img{
    backface-visibility: hidden;
 }
 
+/*Definição para virar a carta*/
 .flip{
     transform: rotateY(180deg); /*Para quando a carta estiver de frente*/
 }
@@ -94,20 +94,15 @@ img{
     top:0;  /*Para Forçar o conteúdo de ficar por cima do game*/
 }
 
-
+/*Botão de Restart*/
 #restart{
     padding: 20px;
     font-size: 20px;
     font-weight: bolder;
-
     background-color: #f3dc09;
-
     border:none;
-
     border-radius: 10px;
-
     margin-top:10%;
-
     cursor:pointer;
 }
 
@@ -117,19 +112,14 @@ img{
 .game{
     
     margin-top:6%;
-
-
     display:grid;
     grid-template: repeat(4, 150px )/repeat(5, 150px); /* << */
     gap:5px;
-
     justify-items: center;
     align-items: center;
-
 }
 
 .back{
-
 position:relative;
 top:3%;
 margin-bottom: 3%;
@@ -140,20 +130,14 @@ margin-bottom: 3%;
     border:none;
     background-color: #101C2C;
     padding:1.5vw;
-
     border-radius: 50px;
-    
     color:#f7f1f1;
-
     font-size: 1.2vw;
     cursor:pointer;
-
-
 }
 
 #home:hover{
   opacity: 0.8;
-
 }
 
 /*Media queries ------------------------------------------------------------*/
@@ -227,16 +211,12 @@ margin-bottom: 3%;
 
     
     }
-
-
 }
-
 
 
 /*Versão Mobile*/
 
 @media only screen and (min-width : 300px) and (max-width:420px) {
-
 
     .card{
         width:80px;
@@ -261,13 +241,11 @@ margin-bottom: 3%;
         border-radius: 15px;
     
     }
-    
    
 }
 
 
 @media screen and (max-width:280px) {
-
 
     .card{
         width:60px;
@@ -296,7 +274,5 @@ margin-bottom: 3%;
 
     
     }
-    
-   
+       
 }
-

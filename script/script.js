@@ -24,7 +24,7 @@ const ICON = 'icon';
 
 
 
-
+//Função para iniciar o Jogo
 startGame();
 
 function startGame(){
@@ -51,6 +51,8 @@ function initializeCards(cards){
 
 }
 
+//Criar Conteúdo para as cartas:
+
 function createCardContent(card, cardElement){
     
     createCardFace(FRONT, card, cardElement);
@@ -58,6 +60,7 @@ function createCardContent(card, cardElement){
 
 }
  
+//Criar a face das cartas (O LADO, FRONT OU BACK)
 function createCardFace (face, card, element){
 
    let cardElementFace = document.createElement('div');
@@ -77,6 +80,7 @@ function createCardFace (face, card, element){
 
 }
 
+//Função de virar a carta;
 
 function flipCard(){
  audio1.play();   
@@ -112,6 +116,8 @@ function flipCard(){
 }
 
 }
+
+//Restartar o Jogo.
 
 function restart(){
     game.clearCards();
