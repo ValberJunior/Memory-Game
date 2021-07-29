@@ -29,3 +29,6 @@ https://user-images.githubusercontent.com/84424883/127422281-82cb9934-f61a-4e0e-
 
 ## NETLIFY 👉👉 https://dragonballmemorygame.netlify.app
 
+
+OBS: A versão mobile ainda está em fase de ajustes.
+
